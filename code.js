@@ -2,7 +2,7 @@ function addNumbers(...numbers) {
   return numbers.reduce((total, number) => {
     number = parseInt(number);
     if (isNaN(number)) return (total = "Not a number");
-    return total + number; //This will not work yet, still refactoring
+    return total + number;
   }, 0);
 }
 
@@ -98,10 +98,29 @@ function test5() {
 //test to see addNumbers("four","five") should return not a number
 function test6() {
   console.log(
-    "Testing to see if the function adds two stringified numbers correctly"
+    "Testing to see if the function returns Not a number when given unparsable strings"
   );
   const num1 = "four";
   const num2 = "five";
+  const expectedResult = "Not a number";
+
+  const actualResult = addNumbers(num1, num2);
+
+  const message =
+    actualResult === expectedResult
+      ? `Test Passed: Result is ${actualResult}`
+      : `This value is incorrect, expected ${actualResult} to be ${expectedResult}`;
+  console.log(message, "\n");
+}
+
+//test for booleans as parameters
+//test to see addNumbers(true,false) should return not a number
+function test7() {
+  console.log(
+    "Testing to see if the function returns Not a number when given two booleans"
+  );
+  const num1 = true;
+  const num2 = false;
   const expectedResult = "Not a number";
 
   const actualResult = addNumbers(num1, num2);
@@ -119,3 +138,4 @@ test3();
 test4();
 test5();
 test6();
+test7();
