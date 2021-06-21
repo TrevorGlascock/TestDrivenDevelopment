@@ -9,7 +9,9 @@ function addNumbers(...numbers) {
 //test to see function adds two numbers
 //test to see addNumbers(4,6) = 10
 function test1() {
-  console.log("Testing to see if the function adds two numbers correctly");
+  console.log(
+    "Test1: Testing to see if the function adds two numbers correctly"
+  );
   const num1 = 4;
   const num2 = 6;
   const expectedResult = 10;
@@ -26,7 +28,9 @@ function test1() {
 //test for single parameter
 //test to see addNumbers(5) = 5
 function test2() {
-  console.log("Testing to see if the function still works with one parameter");
+  console.log(
+    "Test2: Testing to see if the function still works with one parameter"
+  );
   const num1 = 5;
   const expectedResult = 5;
 
@@ -40,7 +44,9 @@ function test2() {
 //test for 3 parameters
 //test to see addNumbers(5,6,7) = 18
 function test3() {
-  console.log("Testing to see if the function still works with 3 parameters");
+  console.log(
+    "Test3: Testing to see if the function still works with 3 parameters"
+  );
   const num1 = 5;
   const num2 = 6;
   const num3 = 7;
@@ -58,7 +64,7 @@ function test3() {
 //test to see addNumbers(5,6,7,8,1,3) = 30
 function test4() {
   console.log(
-    "Testing to see if the function still works with more than 3 parameters"
+    "Test4: Testing to see if the function still works with more than 3 parameters"
   );
   const num1 = 5;
   const num2 = 6;
@@ -80,7 +86,7 @@ function test4() {
 //test to see addNumbers("4","5")
 function test5() {
   console.log(
-    "Testing to see if the function adds two stringified numbers correctly"
+    "Test5: Testing to see if the function adds two stringified numbers correctly"
   );
   const num1 = "4";
   const num2 = "5";
@@ -98,7 +104,7 @@ function test5() {
 //test to see addNumbers("four","five") should return not a number
 function test6() {
   console.log(
-    "Testing to see if the function returns Not a number when given unparsable strings"
+    "Test6: Testing to see if the function returns Not a number when given unparsable strings"
   );
   const num1 = "four";
   const num2 = "five";
@@ -117,7 +123,7 @@ function test6() {
 //test to see addNumbers(true,false) should return not a number
 function test7() {
   console.log(
-    "Testing to see if the function returns Not a number when given two booleans"
+    "Test7: Testing to see if the function returns Not a number when given two booleans"
   );
   const num1 = true;
   const num2 = false;
